@@ -1,0 +1,215 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Encinares_Vending.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="SynEdit HTML exporter" />
+<style type="text/css">
+<!--
+body { color: #000000; background-color: #FFFFFF; }
+.cpp1-assembler { color: #0000FF; }
+.cpp1-character { color: #000000; }
+.cpp1-comment { color: #0078D7; font-style: italic; }
+.cpp1-float { color: #800080; }
+.cpp1-hexadecimal { color: #800080; }
+.cpp1-identifier { color: #000000; }
+.cpp1-illegalchar { color: #000000; }
+.cpp1-number { color: #800080; }
+.cpp1-octal { color: #800080; }
+.cpp1-preprocessor { color: #008000; }
+.cpp1-reservedword { color: #000000; font-weight: bold; }
+.cpp1-space { background-color: #FFFFFF; color: #000000; }
+.cpp1-string { color: #FF0000; }
+.cpp1-symbol { color: #000000; }
+-->
+</style>
+</head>
+<body>
+<pre>
+<code><span style="font: 10pt Courier New;">
+<span class="cpp1-preprocessor">#include &lt;iostream&gt;
+#include &lt;iomanip&gt;                                             
+</span><span class="cpp1-reservedword">using</span><span class="cpp1-space"> </span><span class="cpp1-reservedword">namespace</span><span class="cpp1-space"> std;
+
+</span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> main()                                                      
+{
+  </span><span class="cpp1-reservedword">char</span><span class="cpp1-space"> money;
+  </span><span class="cpp1-reservedword">double</span><span class="cpp1-space"> totalm = </span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+  </span><span class="cpp1-reservedword">double</span><span class="cpp1-space"> value = </span><span class="cpp1-number">0</span><span class="cpp1-symbol">, valued = </span><span class="cpp1-number">0</span><span class="cpp1-symbol">, valuen = </span><span class="cpp1-number">0</span><span class="cpp1-symbol">, valueq = </span><span class="cpp1-number">0</span><span class="cpp1-symbol">, valueb = </span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+  </span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> c1=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">, c2=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">, c3=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">, c4=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">, c5=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">, c6=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+  </span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> C1=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">, C2=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">, C3=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">, C4=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">, C5=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">, C6=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+  </span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> item;
+
+cout&lt;&lt;</span><span class="cpp1-string">&quot;=========Welcome to XTIAN Vending=========&quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+	cout&lt;&lt;</span><span class="cpp1-string">&quot;    Depost Money account                     &quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+	cout&lt;&lt;</span><span class="cpp1-string">&quot;    Enter n or N for BSIT             &quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+	cout&lt;&lt;</span><span class="cpp1-string">&quot;    Enter d or D for BSBS             &quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+	cout&lt;&lt;</span><span class="cpp1-string">&quot;    Enter q or Q for BSED             &quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+	cout&lt;&lt;</span><span class="cpp1-string">&quot;    Enter b or B for High school      &quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+	cout&lt;&lt;</span><span class="cpp1-string">&quot;    Enter e to end the deposit        &quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+	cin&gt;&gt;money;
+
+	</span><span class="cpp1-reservedword">while</span><span class="cpp1-symbol">(money!='e' &amp;&amp; money!='E')
+	{
+		</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(money=='n' || money=='N')
+		{
+			</span><span class="cpp1-reservedword">double</span><span class="cpp1-space"> valuen=</span><span class="cpp1-float">0.05</span><span class="cpp1-symbol">;
+			totalm+=valuen;
+			cout&lt;&lt;</span><span class="cpp1-string">&quot;nickel is deposited, the total money deposited is &quot;</span><span class="cpp1-symbol">&lt;&lt;totalm&lt;&lt;endl;
+			cin&gt;&gt;money;
+		}
+	{
+        </span><span class="cpp1-reservedword">if</span><span class="cpp1-space"> money=='w' || money=='W')	
+        
+        {
+			</span><span class="cpp1-reservedword">double</span><span class="cpp1-space"> valued=</span><span class="cpp1-float">0.10</span><span class="cpp1-symbol">;
+			totalm+=valued;
+			cout&lt;&lt;</span><span class="cpp1-string">&quot;dime is deposited, the total money deposited is &quot;</span><span class="cpp1-symbol">&lt;&lt;totalm&lt;&lt;endl;
+			cin&gt;&gt;money;
+		</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(money=='d' || money=='D')
+		{
+			</span><span class="cpp1-reservedword">double</span><span class="cpp1-space"> valued=</span><span class="cpp1-float">0.10</span><span class="cpp1-symbol">;
+			totalm+=valued;
+			cout&lt;&lt;</span><span class="cpp1-string">&quot;dime is deposited, the total money deposited is &quot;</span><span class="cpp1-symbol">&lt;&lt;totalm&lt;&lt;endl;
+			cin&gt;&gt;money;
+		}
+		</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(money=='q' || money=='Q')
+		{
+			</span><span class="cpp1-reservedword">double</span><span class="cpp1-space"> valueq=</span><span class="cpp1-float">0.25</span><span class="cpp1-symbol">;
+			totalm+=valueq;
+			cout&lt;&lt;</span><span class="cpp1-string">&quot;quarter is deposited, the total money deposited is &quot;</span><span class="cpp1-symbol">&lt;&lt;totalm&lt;&lt;endl;
+			cin&gt;&gt;money;
+		}
+		</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(money=='b' || money=='B')
+		{
+			</span><span class="cpp1-reservedword">double</span><span class="cpp1-space"> valueb=</span><span class="cpp1-float">1.00</span><span class="cpp1-symbol">;
+			totalm+=valueb;
+			cout&lt;&lt;</span><span class="cpp1-string">&quot;dollar is deposited, the total money deposited is &quot;</span><span class="cpp1-symbol">&lt;&lt;totalm&lt;&lt;endl;
+			cin&gt;&gt;money;
+		}
+		</span><span class="cpp1-reservedword">else
+</span><span class="cpp1-space">		{
+			cout&lt;&lt;</span><span class="cpp1-string">&quot;invalid entry, please try again&quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+			cin&gt;&gt;money;
+		}
+	}
+
+	cout&lt;&lt;</span><span class="cpp1-string">&quot;=========Welcome to XTIAN Vending=========&quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+	cout&lt;&lt;</span><span class="cpp1-string">&quot;    Snickers     Goose     Condom        &quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+	cout&lt;&lt;</span><span class="cpp1-string">&quot;     Php34.0     Php50.0    Php.25.5     &quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+	cout&lt;&lt;</span><span class="cpp1-string">&quot;       C1          C2        C3          &quot;</span><span class="cpp1-symbol">&lt;&lt;endl&lt;&lt;endl;
+	cout&lt;&lt;</span><span class="cpp1-string">&quot;     Chips       Dutch      Mint         &quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+	cout&lt;&lt;</span><span class="cpp1-string">&quot;     Php12.5    Php42.25   Php0.25       &quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+	cout&lt;&lt;</span><span class="cpp1-string">&quot;       C4          C5        C6          &quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+	cout&lt;&lt;</span><span class="cpp1-string">&quot;=========================================&quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+	cout&lt;&lt;</span><span class="cpp1-string">&quot;Please enter item number&quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+	cin&gt;&gt;item;
+
+	</span><span class="cpp1-reservedword">if</span><span class="cpp1-space"> (item==c1||C1)
+	{
+		</span><span class="cpp1-reservedword">double</span><span class="cpp1-space"> S=</span><span class="cpp1-float">0.85</span><span class="cpp1-symbol">;
+		</span><span class="cpp1-reservedword">float</span><span class="cpp1-space"> change=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+		</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(totalm&gt;=S)
+		{
+			cout&lt;&lt;</span><span class="cpp1-string">&quot;Snickers is purchased&quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+			change=totalm-S;
+			cout&lt;&lt;</span><span class="cpp1-string">&quot;Money deposited is&quot;</span><span class="cpp1-symbol">&lt;&lt;totalm&lt;&lt;</span><span class="cpp1-string">&quot;Your change is&quot;</span><span class="cpp1-symbol">&lt;&lt;change&lt;&lt;endl;
+			cout&lt;&lt;</span><span class="cpp1-string">&quot;Thank You&quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+		}
+		</span><span class="cpp1-reservedword">else
+</span><span class="cpp1-space">		{
+		}
+
+		</span><span class="cpp1-reservedword">if</span><span class="cpp1-space"> (item==c2||C2)
+	{
+		</span><span class="cpp1-reservedword">float</span><span class="cpp1-space"> G=</span><span class="cpp1-float">2.00</span><span class="cpp1-symbol">;
+		</span><span class="cpp1-reservedword">float</span><span class="cpp1-space"> change=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+		</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(totalm&gt;=G)
+		{
+			cout&lt;&lt;</span><span class="cpp1-string">&quot;Goose is purchased&quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+			change=totalm-G;
+			cout&lt;&lt;</span><span class="cpp1-string">&quot;Money deposited is&quot;</span><span class="cpp1-symbol">&lt;&lt;totalm&lt;&lt;</span><span class="cpp1-string">&quot;Your change is&quot;</span><span class="cpp1-symbol">&lt;&lt;change&lt;&lt;endl;
+			cout&lt;&lt;</span><span class="cpp1-string">&quot;Thank You&quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+		}
+		</span><span class="cpp1-reservedword">else
+</span><span class="cpp1-space">		{
+		}
+
+			</span><span class="cpp1-reservedword">if</span><span class="cpp1-space"> (item==c3||C3)
+	{
+		</span><span class="cpp1-reservedword">float</span><span class="cpp1-space"> CO=</span><span class="cpp1-float">1.50</span><span class="cpp1-symbol">;
+		</span><span class="cpp1-reservedword">float</span><span class="cpp1-space"> change=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+		</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(totalm&gt;=CO)
+		{
+			cout&lt;&lt;</span><span class="cpp1-string">&quot;Elementary Primary School &quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+			change=totalm-CO;
+			cout&lt;&lt;</span><span class="cpp1-string">&quot;Subject is added &quot;</span><span class="cpp1-symbol">&lt;&lt;totalm&lt;&lt;</span><span class="cpp1-string">&quot;Your change is&quot;</span><span class="cpp1-symbol">&lt;&lt;change&lt;&lt;endl;
+			cout&lt;&lt;</span><span class="cpp1-string">&quot;Passed and promoted &quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+		}
+		</span><span class="cpp1-reservedword">else
+</span><span class="cpp1-space">		{
+		}
+
+			</span><span class="cpp1-reservedword">if</span><span class="cpp1-space"> (item==c4||C4)
+	{
+		</span><span class="cpp1-reservedword">float</span><span class="cpp1-space"> CH=</span><span class="cpp1-float">0.50</span><span class="cpp1-symbol">;
+		</span><span class="cpp1-reservedword">float</span><span class="cpp1-space"> change=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+		</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(totalm&gt;=CH)
+		{
+			cout&lt;&lt;</span><span class="cpp1-string">&quot; Fail grade of the student&quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+			change=totalm-CH;
+			cout&lt;&lt;</span><span class="cpp1-string">&quot;subject is added&quot;</span><span class="cpp1-symbol">&lt;&lt;totalm&lt;&lt;</span><span class="cpp1-string">&quot;Your change is&quot;</span><span class="cpp1-symbol">&lt;&lt;change&lt;&lt;endl;
+			cout&lt;&lt;</span><span class="cpp1-string">&quot;Passed promoted &quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+		}
+		</span><span class="cpp1-reservedword">else
+</span><span class="cpp1-space">		{
+		}
+
+			</span><span class="cpp1-reservedword">if</span><span class="cpp1-space"> (item==c5||C5)
+	{
+		</span><span class="cpp1-reservedword">float</span><span class="cpp1-space"> D=</span><span class="cpp1-float">1.00</span><span class="cpp1-symbol">;
+		</span><span class="cpp1-reservedword">float</span><span class="cpp1-space"> change=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+		</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(totalm&gt;=D)
+		{
+			cout&lt;&lt;</span><span class="cpp1-string">&quot;K-12 High school is added&quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+			change=totalm-D;
+			cout&lt;&lt;</span><span class="cpp1-string">&quot;LRN of the student &quot;</span><span class="cpp1-symbol">&lt;&lt;totalm&lt;&lt;</span><span class="cpp1-string">&quot;Your change is&quot;</span><span class="cpp1-symbol">&lt;&lt;change&lt;&lt;endl;
+			cout&lt;&lt;</span><span class="cpp1-string">&quot;promoterd &quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+		}
+		</span><span class="cpp1-reservedword">else
+</span><span class="cpp1-space">		{
+		}
+
+			</span><span class="cpp1-reservedword">if</span><span class="cpp1-space"> (item==c6||C6)
+	{
+		</span><span class="cpp1-reservedword">float</span><span class="cpp1-space"> M=</span><span class="cpp1-float">0.25</span><span class="cpp1-symbol">;
+		</span><span class="cpp1-reservedword">float</span><span class="cpp1-space"> change=</span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+		</span><span class="cpp1-reservedword">if</span><span class="cpp1-symbol">(totalm&gt;=M)
+		{
+			cout&lt;&lt;</span><span class="cpp1-string">&quot;subject and unit quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+			change=totalm-G;
+			cout&lt;&lt;</span><span class="cpp1-string">&quot;Student is added is&quot;</span><span class="cpp1-symbol">&lt;&lt;totalm&lt;&lt;</span><span class="cpp1-string">&quot;Your change is&quot;</span><span class="cpp1-symbol">&lt;&lt;change&lt;&lt;endl;
+			cout&lt;&lt;</span><span class="cpp1-string">&quot;recorded is made &quot;</span><span class="cpp1-symbol">&lt;&lt;endl;
+		}
+		</span><span class="cpp1-reservedword">else
+</span><span class="cpp1-space">		{
+		}
+			}
+			}
+
+		</span><span class="cpp1-reservedword">return</span><span class="cpp1-space"> </span><span class="cpp1-number">0</span><span class="cpp1-symbol">;
+			}
+			
+			</span><span class="cppl-reservedword"> else
+			
+			}
+		}
+	}
+
+}
+
+
+
+</span></span>
+</code></pre>
+</body>
+</html>
