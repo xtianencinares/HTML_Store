@@ -15,7 +15,7 @@ function copyMenu() {
   topPlace.innerHTML = topNav.innerHTML;
 }
 
-copyMenu();
+copyMenu(); 
 
 // show mobile menu
 const menuButton = document.querySelector(".trigger"),
