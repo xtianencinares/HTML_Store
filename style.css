@@ -55,7 +55,7 @@ ul {
   list-style: none;
 }
 
-img {
+img { 
   max-width: var(--percent100);
   vertical-align: middle;
 }
