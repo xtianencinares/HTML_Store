@@ -14,7 +14,7 @@ function copyMenu() {
   var topPlace = document.querySelector(".off-canvas .thetop-nav");
   topPlace.innerHTML = topNav.innerHTML;
 }
-
+ 
 copyMenu(); 
 
 // show mobile menu
