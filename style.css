@@ -168,7 +168,7 @@ h4 {
   object-fit: cover;
   width: var(--percent100);
   height: var(--percent100);
-  display: block;
+  display: block; 
 }
 
 .products .media {
