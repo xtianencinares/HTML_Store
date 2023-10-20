@@ -15,7 +15,6 @@ function copyMenu() {
   topPlace.innerHTML = topNav.innerHTML;
 }
 
- 
 copyMenu(); 
 
 // show mobile menu
