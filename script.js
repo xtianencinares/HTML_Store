@@ -49,7 +49,7 @@ const swiper = new Swiper(".myslider", {
   observeParent: true,
   pagination: {
     el: ".swiper-pagination",
-  },
+  }, 
 });
 
 swiper.update();
