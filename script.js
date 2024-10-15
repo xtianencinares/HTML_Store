@@ -53,3 +53,4 @@ const swiper = new Swiper(".myslider", {
 });
 
 swiper.update();
+
